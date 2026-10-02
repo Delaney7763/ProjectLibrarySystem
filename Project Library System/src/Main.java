@@ -28,7 +28,8 @@ public class Main {
                 case 6 -> System.out.println("Thank you!");
                 default -> System.out.println("Incorrect input; try again.");
 
-            }
+            }//i will try to add password here
+
             if (userInput == 6) {
                 break;
             }
