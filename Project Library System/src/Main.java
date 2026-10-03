@@ -4,6 +4,23 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        String correctUsername = "admin";//username
+        String correctPassword = "1234";
+
+        System.out.println("=== Library Login ===");
+
+        System.out.print("Username: ");
+        String username = scanner.nextLine();
+
+        System.out.print("Password: ");//password
+
+        String password = scanner.nextLine();
+        if (!username.equals(correctUsername) ||
+                !password.equals(correctPassword)) {
+
+            System.out.println("Access denied.");
+            return;
+        }
 
         System.out.println("Please select from the following options:");
         while (true) {
