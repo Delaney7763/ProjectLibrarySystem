@@ -18,7 +18,7 @@ public class Main {
 
 
         if (!username.equals(correctUsername) ||//checking username and password using or operator
-                !password.equals(correctPassword)) {
+                !password.equals(correctPassword)) {//.equals only compare string value
 
             System.out.println("Access denied  and rerun the program");//if its not correct it will be denied
             return;
