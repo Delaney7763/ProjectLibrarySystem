@@ -5,21 +5,22 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         String correctUsername = "admin";//username added by kushal
-        String correctPassword = "1234";
+        String correctPassword = "1234";//here u can change password and username
 
         System.out.println("    Library Login    ");
 
-        System.out.print("Username   ");
+        System.out.print("Username   ");//input for username
         String username = scanner.nextLine();
 
-        System.out.print("Password    ");//password added by kushal
-
+        System.out.print("Password    ");//password added by kushal  input
 
         String password = scanner.nextLine();
-        if (!username.equals(correctUsername) ||
+
+
+        if (!username.equals(correctUsername) ||//checking username and password using or operator
                 !password.equals(correctPassword)) {
 
-            System.out.println("Access denied  and rerun the program");
+            System.out.println("Access denied  and rerun the program");//if its not correct it will be denied
             return;
         }
 
